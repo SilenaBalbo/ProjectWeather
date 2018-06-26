@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://rawgit.com/juliangarnier/anime/master/anime.min.js"></script>
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' />
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <title>Weather Jungle</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>THE WEATHER JUNGLE</h1>
+        <section>
+            <article>
+                <svg width="252px" height="94px" viewBox="3 11 252 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <defs></defs>
+    <path d="M4,80.3307481 L4,103.14209" id="Stroke-3-Copy-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M12,80.3307481 L12,103.14209" id="Stroke-3-Copy" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M20,80.3307481 L20,103.14209" id="Stroke-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M28,79.2468955 L28,103.14209" id="Stroke-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M36,78.1629412 L36,103.14209" id="Stroke-5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M44,75.4792747 L44,103.14209" id="Stroke-6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M52,72.7420239 L52,103.14209" id="Stroke-7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M60,69.5063186 L60,103.14209" id="Stroke-8" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M68,66.251244 L68,103.14209" id="Stroke-9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M76,61.8968703 L76,103.14209" id="Stroke-10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M84,58.6428398 L84,103.14209" id="Stroke-11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M92,55.3517013 L92,103.14209" id="Stroke-12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M100,52.1459205 L100,103.14209" id="Stroke-13" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M108,49.9758708 L108,103.14209" id="Stroke-14" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M116,49.9648003 L116,103.14209" id="Stroke-15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M124,52.0421408 L124,103.14209" id="Stroke-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M132,54.207588 L132,103.14209" id="Stroke-17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M140,57.4549402 L140,103.14209" id="Stroke-18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M148,59.7410947 L148,103.14209" id="Stroke-19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M156,60.7705138 L156,103.14209" id="Stroke-20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M164,59.6868773 L164,103.14209" id="Stroke-21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M172,56.4734051 L172,103.14209" id="Stroke-22" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M180,49.799018 L180,103.14209" id="Stroke-23" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M188,42.3419581 L188,103.14209" id="Stroke-24" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M196,35.8617977 L196,103.14209" id="Stroke-25" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M204,29.3524204 L204,103.14209" id="Stroke-26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M212,23.9352737 L212,103.14209" id="Stroke-27" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M220,19.5951742 L220,103.14209" id="Stroke-28" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M228,18.5101493 L228,103.14209" id="Stroke-29" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M236,16.3400995 L236,103.14209" id="Stroke-30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M244,14.1700498 L244,103.14209" id="Stroke-31" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+    <path d="M252,12 L252,103.14209" id="Stroke-32" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" fill="none"></path>
+</svg>
+            </article>
+        </section>
+    </header>
+
+    <div class="mappgin">
+        <div id='before' class='map'></div>
+        <div id='after' class='map'></div>
+    </div>
+
+
+    
+        <script>
+            mapboxgl.accessToken = "pk.eyJ1Ijoic2lsZW5hYmFsYm8iLCJhIjoiY2pmMm1kMDBvMDQ0czMzbjgwbDhwcXc4bSJ9.nZre9B82uTRg6ROPEx2Dyg";
+            /*var map = new mapboxgl.Map({
+                container: "map",
+                style: "mapbox://styles/mapbox/light-v9",
+                center: [18, 47.368650], // starting position
+                zoom: 3 // starting zoom
+            });
+            map.addControl(new mapboxgl.NavigationControl());*/
+        </script>
+
+
+    <footer class="container-fluid text-center">
+        <p> &copy; Weather Jungle by Silena &#124; All rights reserved &#124; Wanna Jungling together? Find me
+            <a href="https://www.facebook.com/silena.balbo" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/SilenaBalbo" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/bolliciinaa" class="fa fa-instagram"></a>
+        </p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JS/entrance.js"></script>
+    <script src="JS/map.js"></script>
+</body>
+
+</html>
